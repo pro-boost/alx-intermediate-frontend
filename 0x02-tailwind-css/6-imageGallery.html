@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <div class="grid grid-cols-1 lg-grid-cols-3 gap-2 col-span-2">
+        <section class="w-full  lg:col-span-1 flex">
+            <div class="p-4 bg-red-200 w-1/2">Flexbox Item 1</div>
+            <div class="p-4 bg-red-400 w-1/2">Flexbox Item 2</div>
+        </section>
+        <section class="w-full h-full lg:col-span-2 grid grid-cols-1 lg:grid-cols-3 gap-2">
+            <figure class="w-full h-full bg-blue-200">
+                <img src="https://picsum.photos/200/300" alt="Random Image">
+                <figcaption>Image 1</figcaption>
+            </figure>
+            <figure class="w-full h-full bg-blue-200">
+                <img src="https://picsum.photos/200/300" alt="Random Image">
+                <figcaption>Image 1</figcaption>
+            </figure>
+            <figure class="w-full h-full bg-blue-200">
+                <img src="https://picsum.photos/200/300" alt="Random Image">
+                <figcaption>Image 1</figcaption>
+            </figure>
+        </section></div>
+        <aside class="bg-green-200 p-4 col-span-1">Sidebar</aside>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+</body>
+</html>

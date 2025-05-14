@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4 mb-6">
+        <h1 class="text-3xl font-medium mb-1 text-center">Before 
+        </h1>
+    </header>
+
+    <main >
+        <section class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+            <!-- Gallery Item 1 -->
+            <div class="grid grid-cols-1 gap-2 p-4 ">
+              
+              <figure class="bg-gray-300 p-6">
+                    <img src="#" class="w-full bg-red-100 h-80 object-cover " alt="After Image 1">
+              </figure>
+            </div>
+          
+            <!-- Gallery Item 2 -->
+            <div class="grid grid-cols-1 gap-2 p-4 ">
+              
+              <figure class="bg-gray-300 p-6">
+               
+                    <img src="#" class="w-full bg-green-100 h-80 object-cover " alt="After Image 1">            
+
+               
+              </figure>
+            </div>      
+                
+            <!-- Repeat blocks for more items as needed -->
+          </section>
+          
+    </main>
+
+    <footer class="bg-gray-800 text-center text-lg font-medium  text-white p-4 mt-4">
+        <p>&copy; Mohamed-B</p>
+    </footer>
+</body>
+</html>
