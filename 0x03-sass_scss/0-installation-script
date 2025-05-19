@@ -1,3 +1,2 @@
-to Installation Anywhere (Optional)
-Install SASS by using the following command if you have node installed:
-npm install sass -v 3.7.4
+Installed SASS globally using npm:
+   npm install -g sass
